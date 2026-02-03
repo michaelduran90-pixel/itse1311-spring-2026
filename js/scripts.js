@@ -3,6 +3,6 @@
 $( document ).ready(function() {
 
     //$('.myClass').hide();
-    $('.myClass').css("background-color", "purple");
-    
+    $('.myClass').css("color", "purple");
+
 });
