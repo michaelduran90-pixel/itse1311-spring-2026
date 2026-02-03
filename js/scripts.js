@@ -29,16 +29,23 @@ let myFavoriteFruit = fruits[4];
 
 console.log(myFavoriteFruit);
 
-var myCounter = 0;
+//var myCounter = 0;
 var myStop = fruits.length;
-var myStop = 0;
+//var myStop = 0;
 
-do {
+for (var myCounter = 0; myCounter<=myStop; myCounter++) {
+    console.log("my loop is running at " + myCounter);
+
+}
+
+/*do {
     console.log("my loop is running at " + myCounter);
     myCounter++;
-} while (myCounter <= myStop);
+} while (myCounter <= myStop);\
+ */
 
-/*while (myCounter <= myStop) {
+/*
+while (myCounter <= myStop) {
     console.log("my loop is running at " + myCounter);
 
 
