@@ -34,7 +34,7 @@ var myStop = fruits.length;
 //var myStop = 0;
 
 for (var myCounter = 0; myCounter<=myStop; myCounter++) {
-    console.log("my loop is running at " + myCounter + " which is a " + fruits[4]);
+    console.log("my loop is running at " + myCounter + " which is a " + fruits[myCounter]);
 
 }
 
