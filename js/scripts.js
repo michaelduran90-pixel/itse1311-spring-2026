@@ -5,7 +5,9 @@ $( document ).ready(function() {
     $('#myBTN').on('click', goToMyFunction);
 
     function goToMyFunction() {
-        alert('test');
+
+        var myName = $('#myName').val();
+        alert(myName);
     }
 
     //$('.myClass').hide();
