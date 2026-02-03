@@ -8,6 +8,8 @@ $( document ).ready(function() {
 
         var myName = $('#myName').val();
         alert(myName);
+
+        $('.myClass').css("color", "red");
     }
 
     //$('.myClass').hide();
