@@ -12,10 +12,9 @@ $database ="itse1311";
 $conn = new mysqli($server, $username, $password, $database);
 
 //Connection Creation
-/*
 if ($conn->connect_error) {
     die("Connection failed".$conn->connect_error);
 }
 else {
     echo "Connection Successfull";
-}*/
+}
