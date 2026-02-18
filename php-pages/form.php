@@ -1,37 +1,25 @@
 <?php
 
+if (isset($_POST)  && $_POST['submit'] != '') {
+
 include('connection.php');
 
 $firstName = $_POST['firstName'];
+//$firstName = "Michael-Manual";
 
-echo $firstName;
+//insert into database
+$sql = "INSERT INTO contacts (firstName) VALUES ('$firstName')";
 
-$i = 0;
+    if ($conn->query($sql) === TRUE) {
+        echo "New record entered";
+    }
+    else {
+        "Error: " . $sql . $conn->error;
+    }
 
-$query = "SELECT fname FROM myitsetable WHERE fname = 'Michael' ORDER BY fname ASC";
-
-if($stmt=$conn->prepare($query)) {
-    
-    /*execute statement*/ 
-    $stmt->execute();
-
-    /*stmt bind variables*/ 
-    $stmt->bind_result($fname);
-
-        /*fetch values*/ 
-        while($stmt->fetch()) {
-
-            $i++;
-            echo $i . ": " . $fname ."<br />";
-
-        }
-
-/*close statement*/ 
-$stmt->close();
-
-}
-
-echo "The number of records are " . $i;
-
-/*close connection*/ 
 $conn->close();
+
+} // came from post
+else {
+    echo "Please fill out the form";
+}
