@@ -91,7 +91,7 @@
             <!-- Backgroun Check - file (upload) Field -->
             <div class="col-12 col-xxs-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
               <label for="background-check">Background Check</label>
-              <input type="file" name="file" id="background-check" required accept=".docx" class="form-control" />
+              <input type="file" name="file" id="background-check" accept=".docx" class="form-control" />
             </div>
 
             <!-- Participation In - radio Field -->
@@ -112,13 +112,13 @@
             <div class="col-12 col-xxs-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
               <strong>Time of Day</strong><br />
 
-              <input type="checkbox" name="timeOfDay" id="time-of-day-morning" required value="Morning" class="form-check-input checkbox timeOfDay" />
+              <input type="checkbox" name="timeOfDay[]" id="time-of-day-morning" required value="Morning" class="form-check-input checkbox timeOfDay" />
               <label for="time-of-day-morning">Morning</label>
 
-              <input type="checkbox" name="timeOfDay" id="time-of-day-afternoon" required value="Afternoon" class="form-check-input checkbox timeOfDay" />
+              <input type="checkbox" name="timeOfDay[]" id="time-of-day-afternoon" required value="Afternoon" class="form-check-input checkbox timeOfDay" />
               <label for="time-of-day-afternoon">Afternoon</label>
 
-              <input type="checkbox" name="timeOfDay" id="time-of-day-evening" required value="Evening" class="form-check-input checkbox timeOfDay" />
+              <input type="checkbox" name="timeOfDay[]" id="time-of-day-evening" required value="Evening" class="form-check-input checkbox timeOfDay" />
               <label for="time-of-day-evening">Evening</label>
             </div>
 
