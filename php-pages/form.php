@@ -19,7 +19,6 @@ try {
         $color = $_POST['color'];
         $participation = $_POST['participation'];
         $timeOfDay = $_POST['timeOfDay'];
-
         $all_timeOfDay = '';
         $comma = '';
 
@@ -31,7 +30,7 @@ try {
             }
 
             echo $all_timeOfDay;
-            exit;
+            //exit;
 
         $aboutYou = $_POST['aboutYou'];
         $terms = $_POST['terms'];
@@ -86,7 +85,7 @@ contacts_record_id
 '$tShirt',
 '$color',
 '$participation',
-'$timeOfDay',
+'$all_timeOfDay',
 '$aboutYou',
 '$terms',
 '$last_id'
