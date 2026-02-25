@@ -2,6 +2,8 @@
 
 if (isset($_FILE['file'])) {
 
+include_once('guid.php');
+
     $file_name = $_FILE['file']['name'];
     $file_size = $_FILE['file']['size'];
     $file_tmp = $_FILE['file']['tmp_name'];
