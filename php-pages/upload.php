@@ -1,5 +1,8 @@
 <?php
 
+$file_name = $_FILE['file']['name'];
+echo "the file is " . $file_name;
+
 if (isset($_FILE['file'])) {
 
 include_once('guid.php');
@@ -21,7 +24,7 @@ include_once('guid.php');
     }
 
     if (empty($errors)===TRUE) {
-        move_uploaded_file($file_temp, "upload/".$guid.$file_name);
+        move_uploaded_file($file_temp, "upload/".$form_id.$file_name);
     }
     else{
         print_r($errors);
