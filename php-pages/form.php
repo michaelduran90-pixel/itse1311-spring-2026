@@ -6,7 +6,7 @@ if (isset($_POST)  && $_POST['submit'] != '') {
 
 include('connection.php');
 
-include_once('guid.php');
+include('upload.php');
 
 $conn->autocommit(FALSE);
 
@@ -84,6 +84,7 @@ participation,
 timeOfDay,
 aboutYou,
 terms,
+document,
 contacts_record_id,
 guid
 ) VALUES (
@@ -95,6 +96,7 @@ guid
 '$all_timeOfDay',
 '$aboutYou',
 '$terms',
+'$dbFileName',
 '$last_id',
 '$form_id'
 )";
@@ -112,7 +114,7 @@ guid
     //commit transaction
     $conn->commit();
 
-    include('upload.php');
+    
 
 } //try
 catch(Exception $e) {
