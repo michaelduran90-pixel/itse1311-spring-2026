@@ -24,7 +24,7 @@ include_once('guid.php');
     }
 
     if (empty($errors)===TRUE) {
-        move_uploaded_file($file_temp, "upload/".$form_id.$file_name);
+        move_uploaded_file($file_temp, "uploads/".$form_id.$file_name);
     }
     else{
         print_r($errors);
