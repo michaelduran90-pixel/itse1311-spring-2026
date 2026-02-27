@@ -1,18 +1,18 @@
 <?php
 
-$file_name = $_FILE['file']['name'];
+$file_name = $_FILES['file']['name'];
 echo "the file is " . $file_name;
 
-if (isset($_FILE['file'])) {
+if (isset($_FILES['file'])) {
 
 include_once('guid.php');
 
-    $file_name = $_FILE['file']['name'];
-    $file_size = $_FILE['file']['size'];
-    $file_tmp = $_FILE['file']['tmp_name'];
-    $file_type = $_FILE['file']['type'];
+    $file_name = $_FILES['file']['name'];
+    $file_size = $_FILES['file']['size'];
+    $file_tmp = $_FILES['file']['tmp_name'];
+    $file_type = $_FILES['file']['type'];
 
-    $file_ext = strtolower(end(explode('.', $_FILE['file']['name'])));
+    $file_ext = strtolower(end(explode('.', $_FILES['file']['name'])));
     $extensions = array("pdf", "docx");
 
     if(in_array($file_ext, $extensions)===false){
