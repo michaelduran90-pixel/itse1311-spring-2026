@@ -6,6 +6,8 @@ if (isset($_POST)  && $_POST['submit'] != '') {
 
 include('connection.php');
 
+include_once('guid.php');
+
 $conn->autocommit(FALSE);
 
 try {
@@ -47,13 +49,15 @@ firstName,
 lastName,
 age,
 email,
-phone
+phone,
+guid
 ) VALUES (
 '$firstName',
 '$lastName',
 '$age',
 '$email',
-'$phone'
+'$phone',
+'$form_id'
 )";
 
     if ($conn->query($sql) === TRUE) {
@@ -80,7 +84,8 @@ participation,
 timeOfDay,
 aboutYou,
 terms,
-contacts_record_id
+contacts_record_id,
+guid
 ) VALUES (
 '$url',
 '$startDate',
@@ -90,7 +95,8 @@ contacts_record_id
 '$all_timeOfDay',
 '$aboutYou',
 '$terms',
-'$last_id'
+'$last_id',
+'$form_id'
 )";
 
     if ($conn->query($sql) === TRUE) {

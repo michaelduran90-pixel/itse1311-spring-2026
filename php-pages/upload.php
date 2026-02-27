@@ -2,7 +2,7 @@
 
 if (isset($_FILES['file'])) {
 
-include_once('guid.php');
+//include_once('guid.php');
 
     $file_name = $_FILES['file']['name'];
     $file_size = $_FILES['file']['size'];
