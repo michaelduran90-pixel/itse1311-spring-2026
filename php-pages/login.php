@@ -24,20 +24,20 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quas.</p>
             </div>
 
-            <form class="needs-validation" novalidate>
+            <form method="post" action="login-page.php" class="needs-validation" novalidate>
                 <div class="row">
 
                     <!-- User Name - text Field-->
                     <div class="col-12 col-xxs-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" required class="form-control" />
+                        <input type="email" name="email" id="email" required class="form-control" />
                     </div>
                   
                   
                     <!-- Password - text Field-->
                     <div class="col-12 col-xxs-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                         <label for="password">Password</label>
-                        <input type="text" name="password" id="password" required class="form-control" />
+                        <input type="password" name="password" id="password" required class="form-control" />
                     </div>
 
                   
