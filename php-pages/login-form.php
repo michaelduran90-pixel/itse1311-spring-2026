@@ -24,7 +24,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quas.</p>
             </div>
 
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" method="post action="update.php" novalidate>
                 <div class="row">
 
                     <!-- First Name - text Field-->
