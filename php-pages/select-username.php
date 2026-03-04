@@ -23,8 +23,9 @@ if($stmt=$conn->prepare($query)) {
         /*fetch values*/ 
         while($stmt->fetch()) {
 
-            $i++;
-            echo $i . ": " . $firstName ."<br />";
+            //$i++;
+            //echo $i . ": " . $firstName ."<br />";
+            echo "Welcome " . $_SESSION['validUser'];
 
         }
 
